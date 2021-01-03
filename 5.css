@@ -1,0 +1,414 @@
+@font-face {
+font-family: 'Gotham Pro';
+src: url(fonts/14078.ttf);
+}
+
+@font-face {
+font-family: 'Gotham Pro Light';
+src: url(fonts/GothamProLight.ttf);
+}
+
+html, body {
+font-family: 'Gotham Pro', 'Roboto', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+body {
+text-align: center;
+align-content: center;
+color: #222222;
+font-size: 15px;
+line-height: 20px;
+}
+
+header, main, body, footer {
+margin-left: auto;
+margin-right: auto;
+}
+
+header, main, footer {
+max-width: 1920px;
+}
+
+header {
+background: #fff;
+display: block;
+padding: 20px 50px 29px 60px;
+}
+
+.header_container {
+display: flex;
+flex-direction: row;
+align-items: stretch;
+height: 100%;
+}
+
+.logo {
+max-height: 90px;
+max-width: 200px;
+}
+
+.logo, .col1 {
+margin-right: 30px;
+}
+
+.col1, .col2 {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.col1 {
+align-items: flex-start;
+}
+
+.col2 {
+flex-grow: 1;
+}
+
+.dropdown {
+display: none;
+}
+
+.office_default a {
+display: inline-block;
+position: relative;
+text-decoration: none;
+color: #222222;
+font-size: 14px;
+font-family: 'Gotham Pro Light';
+}
+
+.office_default a::before {
+content: 'Офис на ';
+color: #222222;
+font-size: 14px;
+font-family: 'Gotham Pro Light';
+}
+
+.office_default a::after {
+content: url(img/Down.png);
+position: absolute;
+right: -15px;
+top: 0;
+}
+
+.btn {
+display: flex;
+justify-content: center;
+margin: 0;
+}
+
+.btn a {
+display: inline-block;
+font-weight: 600;
+color: white;
+text-decoration: none;
+background-color: #1C69D4;
+border: none;
+border-radius: 4px;
+padding: 15px 58px 15px 95px;
+}
+
+.bt {
+position: relative;
+}
+
+.bt::before {
+content: url(img/Catalog_Burger.svg);
+position: absolute;
+left: -39px;
+top: 0;
+}
+
+.navigation {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+
+.nav a, .enter a {
+text-decoration: none;
+color: #222222;
+}
+
+.nav a:hover, .enter a:hover {
+font-weight: 700;
+color: #1C69D4;
+transition: color 0.2s;
+}
+
+.nav a:not(:last-child) {
+margin-right: 40px;
+}
+
+.telephone {
+font-size: 18px;
+}
+
+.telephone, .selection {
+font-weight: 700;
+}
+
+.enter a:not(:last-child) {
+margin-right: 56px;
+}
+
+.entrance, .basket {
+position: relative;
+}
+
+.entrance::before {
+content: url(img/entrance.svg);
+position: absolute;
+left: -29px;
+top: 0;
+}
+
+.basket::before {
+content: url(img/basket.svg);
+position: absolute;
+left: -32px;
+top: 0;
+}
+
+.search {
+width: 100%;
+background-image: url('img/Search.svg');
+background-position: 20px 16px;
+background-repeat: no-repeat;
+font-size: 14px;
+line-height: 20px;
+color: #999999;
+padding-left: 49px;
+padding-top: 15px;
+padding-bottom: 15px;
+border: 1px solid #BBBBBB;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+main {
+padding: 40px 50px 0 50px;
+background-color: #F0F0F0;
+}
+
+.slideshow-container {
+position: relative;
+}
+
+.controls {
+position: absolute;
+top: 0;
+right: 190px;
+width: 160px;
+height: 80px;
+display: flex;
+align-items: center;
+z-index: 2;
+}
+
+.right-arrow {
+background-image: url('img/Right_Arrow.svg');
+}
+
+.left-arrow {
+background-image: url('img/Right_Arrow.svg');
+transform: rotate(180deg);
+}
+
+.left-arrow, .right-arrow {
+padding: 0;
+margin: 0;
+opacity: 40%;
+height: 80px;
+width: 80px;
+z-index: 3;
+transition-duration: 0.1s;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+opacity: 100%;
+}
+
+.slider_text {
+padding-left: 190px;
+padding-right: 190px;
+padding-bottom: 240px;
+display: flex;
+justify-content: space-between;
+min-height: 299px;
+}
+
+.slider_content {
+position: relative;
+background-size: cover;
+background-position: center;
+}
+
+.product_photo {
+position: absolute;
+top: 15px;
+left: 50%;
+transform: translate(-50%);
+}
+
+#slide1 {
+background-image: url('img/slide1.png');
+}
+
+#slide2 {
+background-image: url('img/slide2.png');
+}
+
+#slide3 {
+background-image: url('img/slide3.png');
+}
+
+.left_column {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-evenly;
+}
+
+.left_column p {
+margin: 0;
+padding: 0;
+font-size: 42px;
+line-height: 49px;
+font-weight: 700;
+color: white;
+max-width: 315px;
+text-align: left;
+}
+
+.left_column a {
+font-size: 16px;
+color: #222222;
+text-decoration: none;
+font-weight: 700;
+position: relative;
+}
+
+.left_column a::after {
+content: url(img/more.svg);
+position: absolute;
+right: -55px;
+top: -2px;
+}
+
+.right_column {
+display: flex;
+flex-direction: column;
+justify-content: center;	
+}
+
+.right_column p {
+margin: 0;
+padding: 0;
+font-size: 75px;
+text-align: right;
+color: white;
+padding-top: 50px;
+font-family: 'Gotham Pro Light';
+}
+
+/*
+.mySlides {
+display: none;
+}
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}*/
+
+.free {
+padding-left: 190px;
+padding-right: 190px;
+margin-top: -240px;	
+display: flex;
+justify-content: space-between;
+align-items: stretch;
+}
+
+.free div:not(:last-child) {
+margin-right: 30px;
+}
+
+.advantage {
+background: #FFFFFF;
+box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+padding: 32px 20px 32px 80px;
+z-index: 4;
+width: 100%;
+text-align: left;
+}
+
+.advantage_content {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: space-between;
+position: relative;
+}
+
+#first div::before {
+content: url(img/01.svg);
+position: absolute;
+top: 0;
+left: -57px;
+}
+
+#second div::before {
+content: url(img/02.svg);
+position: absolute;
+top: 0;
+left: -57px;
+}
+
+#third div::before {
+content: url(img/03.svg);
+position: absolute;
+top: 0;
+left: -57px;
+}
+
+h2, p {
+padding: 0;
+margin: 0;
+}
+
+.advantage_content h2 {
+font-weight: bold;
+font-size: 24px;
+line-height: 24px;
+margin-bottom: 8px;
+}
+
+.advantage_text {
+font-size: 14px;
+line-height: 20px;
+margin-bottom: 8px;
+}
+
+.phone {
+font-size: 24px;
+line-height: 40px;
+}
+
+

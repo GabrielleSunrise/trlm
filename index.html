@@ -13,6 +13,7 @@
 	<div class="header_container">
 	<img class="logo" src="img/logo.png">
 	<div class="col1">
+		<div id="dop2"><span>trlm.ru</span></div>
 		<div class="offices">
 			<div class="office_default">
 				<a href="/">Малиновского</a>
@@ -31,8 +32,8 @@
     <div class="col2">
     	<div class="navigation">
     		<div class="phone_nav">
-    		<a class="telephone" href="tel:88005501980">8-800-550-19-80</a>
-        <div class="nav">
+    		<a class="telephone" id="phone_number" href="tel:88005501980">8-800-550-19-80</a>
+        <div class="nav" id="menu">
             <a class="selection" href="/">Подбор запчастей</a>
             <a href="/">Доставка</a>
             <a href="/">Как купить</a>
@@ -42,17 +43,19 @@
         </div>
         </div>
         <div class="enter">
-        	<a class="entrance" href="/">Войти</a>
-            <a class="basket" href="/">Корзина</a>
+        	<a class="entrance" id="entrance" href="/">Войти</a>
+            <a class="basket" id="basket" href="/">Корзина</a>
         </div>
     	</div>
-    	<div>
+    	<div class="search_phone">
             <form class="long-search">
             <input class="search" type="text" placeholder="Что ищите?">
             </form>
+            <div id="dop3"></div>
     	</div>
     </div>
     </div>
+        <div id="dop"></div>
 </header>
 
 <main>
@@ -111,26 +114,29 @@
 
     <div class="free">
     	<div class="advantage" id="first">
+    			<div class="adv_content">
     			<h2>Бесплатный звонок</h2>
     			<p class="advantage_text">На любые номера РФ</p>
-    			<p class="phone">8 800 550-19-80</p>
-    			<a href="/" class="action call"><span>+7 (928) 107-80-80</span></a>
+    			<p class="phone">8 800 550-19-80</p></div>
+    			<a href="/" class="action call"><span id="number">+7 (928) 107-80-80</span></a>
     	</div>
     	<div class="advantage" id="second">
+    			<div class="adv_content">
     			<h2>Бесплатный подбор</h2>
-    			<p class="advantage_text">Мы найдем самую низкую цену на оригинальную запчасть, достойную альтернативу или самый дешевый аналог.</p>
+    			<p class="advantage_text">Мы найдем самую низкую цену на оригинальную запчасть, достойную альтернативу или самый дешевый аналог.</p></div>
     			<a href="/" class="action">Заявка на подбор</a>
     	</div>
     	<div class="advantage" id="third">
+    		    <div class="adv_content">
     			<h2>Бесплатная доставка</h2>
-    			<p class="advantage_text">Согласуем и привезём запчасти в офис или домой в удобное для Вас время.</p>
+    			<p class="advantage_text">Согласуем и привезём запчасти в офис или домой в удобное для Вас время.</p></div>
     			<a href="/" class="action">Пункты выдачи</a>
     	</div>
     </div>
 
    <div class="teasers">
      	<div class="small_teaser">
-     		<h3>Щетки <br>AWM</h3>
+     		<h3>Щетки AWM</h3>
      		<a href="/">ПОДРОБНЕЕ</a>
      	</div>
      	<div class="big_teaser">
@@ -162,6 +168,7 @@
     <div class="copyright"><span>Дизайн — «<a href="/">Есть Идея!</a>»</span></div>
 </footer>
 
-<!--<script src="slider.js"></script>-->
+<script src="number.js"></script>
+<script src="menu.js"></script>
 </body>
 </html>

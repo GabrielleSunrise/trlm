@@ -11,10 +11,20 @@
 
 <header>
 	<div id="mobile_hat">
+<div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Закрыть">x</span>
+  <div class="overlay-content">
+    <form class="long-search">
+            <input class="search" type="text" placeholder="Что ищете?">
+            </form>
+      <button type="submit"><img src="img/Search_white.svg"></button>
+    </form>
+  </div>
+</div>
 		<div class="container_top">
 			<div id="trlm"></div>
 			<div class="icons">
-				<a href="/"><img src="img/Search.svg"></a>
+				<span class="openBtn" onclick="openSearch()"><img src="img/Search.svg"></span>
 				<a href="/"><img src="img/entrance.svg"></a>
 				<a href="/"><img src="img/basket.svg"></a>
 			</div>
@@ -64,7 +74,7 @@
     	</div>
     	<div class="search_phone">
             <form class="long-search">
-            <input class="search" type="text" placeholder="Что ищите?">
+            <input class="search" type="text" placeholder="Что ищете?">
             </form>
             <div id="dop3"></div>
     	</div>
@@ -186,5 +196,6 @@
 <script src="number.js"></script>
 <script src="slider.js"></script>
 <script src="menu.js"></script>
+<script src="search.js"></script>
 </body>
 </html>

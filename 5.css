@@ -83,8 +83,6 @@ align-items: flex-start;
 justify-content: space-evenly;
 background-color: white;
 z-index: 11;
-/*position: absolute;
-right: -20px;*/
 padding: 10px 20px;
 }
 
@@ -234,6 +232,7 @@ height: 80px;
 display: flex;
 align-items: center;
 z-index: 2;
+cursor: pointer;
 }
 
 .right-arrow {
@@ -599,7 +598,6 @@ display: none;
 #mobile_hat {
 display: none;
 }
-
 
 @media screen and (max-width: 1800px) {
 
@@ -1126,11 +1124,76 @@ align-items: center;
 margin-right: 30px;
 }
 
+.openBtn {
+margin-right: 30px;
+}
+
 .btn {
 padding: 0 10px 12px;
 }
 
 .btn a {
 width: 100%;
+}
+
+.search {
+background-image: url('');
+padding-left: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.long-search {
+margin-right: 0px;
+padding: 0px;
+width: 80%;
+}
+
+.overlay {
+height: 100vh;
+width: 100vw;
+display: none;
+position: fixed;
+z-index: 20;
+top: 0;
+left: 0;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.8); 
+}
+
+.overlay-content {
+display: flex;
+flex-wrap: nowrap;
+position: relative;
+top: 46%;
+width: 80%;
+text-align: center;
+margin-top: 30px;
+margin: auto;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 40px;
+cursor: pointer;
+color: white;
+}
+
+.overlay .closebtn:hover {
+color: #ccc;
+}
+
+.overlay button {
+width: 20%;
+padding: 10px;
+background: #1C69D4;
+border: none;
+cursor: pointer;
+}
+
+.overlay button:hover {
+background: #093F8A;
 }
 }

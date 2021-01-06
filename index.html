@@ -76,8 +76,8 @@
 <main>
 	<div class="slideshow-container">
 		<div class="controls">
-			<a class="left-arrow" id="prev"></a>
-			<a class="right-arrow" id="next"></a>
+			<a class="left-arrow prev" id="prev" onclick="plusSlides(-1)"></a>
+			<a class="right-arrow next" id="next" onclick="plusSlides(1)"></a>
 		</div>
 	    <div class="mySlides fade">
 		    <div class="slider_content" id="slide1">
@@ -95,7 +95,7 @@
 		            </div>
 		    </div>
 	    </div>
-		<!--<div class="mySlides fade">
+		<div class="mySlides fade">
 		<div class="slider_content" id="slide2">
 			<div class="product_photo"><img src="img/slide2_center.png"></div>
 			<div class="slider_text">
@@ -124,7 +124,7 @@
 			</div>
 		</div>
 		</div>
-	</div>-->
+	</div>
     </div>
 
     <div class="free">
@@ -184,6 +184,7 @@
 </footer>
 
 <script src="number.js"></script>
+<script src="slider.js"></script>
 <script src="menu.js"></script>
 </body>
 </html>

@@ -342,10 +342,10 @@ padding-top: 50px;
 font-family: 'Gotham Pro Light';
 }
 
-/*
 .mySlides {
 display: none;
 }
+
 .fade {
 -webkit-animation-name: fade;
 -webkit-animation-duration: 1.5s;
@@ -361,7 +361,7 @@ to {opacity: 1}
 @keyframes fade {
 from {opacity: .4} 
 to {opacity: 1}
-}*/
+}
 
 .free {
 padding-left: 190px;

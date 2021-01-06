@@ -23,4 +23,12 @@ document.getElementById("dop").classList.toggle("show");
 
 if(window.innerWidth <= 639) {
 document.getElementById("desktop_hat").classList.add("disappear");
+var node=document.getElementById("dop2");
+document.getElementById("trlm").appendChild(node);
+var office=document.getElementById("malinovskiy_desktop");
+document.getElementById("malinovskiy_mobile").appendChild(office);
+var tel=document.getElementById("dop3");
+document.getElementById("mobhat_phone").appendChild(tel);
+var button=document.getElementById("btn");
+document.getElementById("catalog_mob").appendChild(button);
 }

@@ -596,6 +596,11 @@ display: none;
 display: none;
 }
 
+#mobile_hat {
+display: none;
+}
+
+
 @media screen and (max-width: 1800px) {
 
 .office_default span::before {
@@ -891,7 +896,7 @@ min-height: 250px;
 align-items: flex-start;
 justify-content: space-evenly;
 background-color: white;
-z-index: 10;
+z-index: 15;
 position: absolute;
 top: 60px;
 left: 0px;
@@ -1078,5 +1083,54 @@ padding-bottom: 16px;
 
 .footer-nav a:not(:last-child), .footer-nav a:last-child {
 margin-left: 0;
+}
+
+#mobile_hat {
+display: block;
+}
+
+.container_top, .container_middle {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+#dop2 {
+padding-left: 0;
+}
+
+.container_middle {
+background-color: #F0F0F0;
+}
+
+.offices {
+top: 0;
+left: 0;
+position: relative;
+margin-bottom: 12px;
+margin-top: 12px;
+}
+
+#dop3 {
+padding: 12px 0px;
+}
+
+.icons {
+display: flex;
+align-items: center;
+}
+
+.icons a:not(:last-child) {
+margin-right: 30px;
+}
+
+.btn {
+padding: 0 10px 12px;
+}
+
+.btn a {
+width: 100%;
 }
 }

@@ -1,9 +1,4 @@
 document.getElementById("dop").classList.add("hide");
-document.getElementById("dropdown").classList.add("no_dropdown");
-document.getElementById("office_list").onclick = function() {offices()};
-function offices() {
-document.getElementById("dropdown").classList.toggle("dropdown");
-}
 
 if(window.innerWidth <= 1279) {
 document.getElementById("dop").innerHTML=document.getElementById("menu").innerHTML;

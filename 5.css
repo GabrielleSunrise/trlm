@@ -70,47 +70,28 @@ align-items: flex-start;
 flex-grow: 1;
 }
 
-.no_dropdown {
-display: none;
-}
-
-.dropdown {
-display: flex;
-flex-direction: column;
-min-width: 120px;
-min-height: 120px;
-align-items: flex-start;
-justify-content: space-evenly;
-background-color: white;
-z-index: 11;
-padding: 10px 20px;
-}
-
 .offices {
 margin-bottom: 18px;
 }
 
-.office_default span {
-display: inline-block;
+#office_list {
+-moz-appearance: none;
+-webkit-appearance: none;
+border: none;
 position: relative;
-text-decoration: none;
-color: #222222;
+outline: none;
 font-size: 14px;
 font-family: 'Gotham Pro Light';
+padding-right: 16px;
+padding-left: 1px;
+background: url("img/Down.png") no-repeat right center;
 }
 
-.office_default span::before {
+.offices::before {
 content: 'Офис на ';
 color: #222222;
 font-size: 14px;
 font-family: 'Gotham Pro Light';
-}
-
-.office_default span::after {
-content: url(img/Down.png);
-position: absolute;
-right: -15px;
-top: 0;
 }
 
 .btn {
@@ -601,7 +582,7 @@ display: none;
 
 @media screen and (max-width: 1800px) {
 
-.office_default span::before {
+.offices::before {
 content: '';
 }
 
@@ -794,7 +775,7 @@ display: none;
 
 @media screen and (max-width: 959px) {
 
-.office_default span::before {
+.offices::before {
 content: 'Офис на ';
 color: #222222;
 font-size: 14px;
@@ -1055,7 +1036,7 @@ padding: 30px 20px;
 min-height: 252px;
 }
 
-.office_default span::before {
+.offices::before {
 content: '';
 }
 
